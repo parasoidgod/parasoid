@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parasoid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet" 
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+          crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+          crossorigin="anonymous">
+    </script>
+    <style>
+        .main-photo {
+            border-radius: 50%;
+            width: 60%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            margin-bottom: 1em;
+        }
+
+        .card {
+            background-color: rgba(225, 225, 225, 0.18);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(197, 197, 197, 0.2);
+            border-radius: 4%;
+            backdrop-filter: blur(20px);
+        }
+
+        video {
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%; /* Устанавливаем ширину видео на 100% экрана */
+        height: 100%; /* Устанавливаем высоту видео на 100% экрана */
+        z-index: -1000;
+        object-fit: cover; /* Растягиваем видео чтобы покрыть весь элемент */
+        }
+
+        .content {
+        z-index: 1;
+        }
+
+    </style>
+</head>
+<body style="background-color: rgb(48, 47, 47);">
+    <video autoplay muted loop>
+        <source src="videoplayback.webm" type="video/webm"> 
+        <!-- Дополнительные форматы видео, например, WebM или Ogg, можно добавить здесь-->
+    </video>
+  <div class="content">
+    <nav class="navbar  navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Навбар</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="stack.html">Stack</a>
+              </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container my-5 text-center">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="card mx-auto">
+                    <img src="main.jpg" class="card-img-top" alt="main image">
+                    <div class="card-body">
+                        <h1 class="card-title">parasoid | sqw!k</h5>
+                        <p class="card-text light">This is my first website in the field of frontend development.</p>
+                        <a href="https://t.me/adapterparasoid" class="btn btn-primary" target="_blank">Telegram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>

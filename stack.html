@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parasoid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet" 
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+          crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+          crossorigin="anonymous">
+    </script>
+    <style>
+
+        .card {
+            background-color: rgba(225, 225, 225, 0.18);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(197, 197, 197, 0.2);
+            border-radius: 4%;
+            margin-left: 10%;
+            margin-right: 10%;
+            backdrop-filter: blur(20px);
+        }
+
+        video {
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%; /* Устанавливаем ширину видео на 100% экрана */
+        height: 100%; /* Устанавливаем высоту видео на 100% экрана */
+        z-index: -1000;
+        object-fit: cover; /* Растягиваем видео чтобы покрыть весь элемент */
+        }
+
+        .content {
+        z-index: 1;
+        }
+
+        body  {
+          background-color: rgb(48, 47, 47);
+        }
+
+        .card-title  {
+          color:rgb(185, 185, 180);
+        }
+        .card-text {
+          color:darkgray;
+        }
+    </style>
+</head>
+<body>
+  <video autoplay muted loop>
+    <source src="videoplayback.webm" type="video/webm"> 
+    <!-- Дополнительные форматы видео, например, WebM или Ogg, можно добавить здесь-->
+  </video>
+  <div class="content">
+    <nav class="navbar  navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Навбар</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="stack.html">Stack</a>
+                </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+    <div class="row row-cols-1 row-cols-md-3 g-0 my-5">
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://sun9-61.userapi.com/impf/n_GTOjt02C7Hksosh2M1Ehdbx67krkzCFctuKg/cZbzNZKSFGY.jpg?size=1200x680&quality=96&sign=3902784a7adb69902c51741dd8fb3784&type=album" class="card-img-top main" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">HTML + CSS</h5>
+            <p class="card-text">Using HTML and CSS, the frame and style of all objects on a website page are created. this is the so-called basis of all sites</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 my-2">
+          <img src="https://cs11.pikabu.ru/post_img/2020/02/29/11/og_og_1583005972263333358.jpg" class="card-img-top main" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">JavaScript</h5>
+            <p class="card-text">With the help of JavaScript, all the mechanics of the site are done, as well as animations, etc.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 my-3">
+          <img src="https://cdn-edge.kwork.ru/pics/t3/59/27299074-64731aa3c72a9.jpg" class="card-img-top main" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Aiogram + Python</h5>
+            <p class="card-text">The Aiogram and Python is used for building bots in Telegram, ranging from gaming to business projects</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
